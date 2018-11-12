@@ -1,0 +1,207 @@
+CV_Database {
+  modelcov {
+    id			    1
+    name		    "EX031B"
+    version		    "1.1.1"
+    refModelcovIds	    [1]
+    topModelcovId	    [1]
+    rootTree		    [0 2 0 0]
+    blockTypes		    [5]
+  }
+  root {
+    id			    2
+    modelcov		    1
+    topSlsf		    6
+    firstTest		    3
+    treeNode		    [1 0 0 0]
+    checksum		    [2574607361 2738436232 960625487 1736078747]
+    dataSize		    [0 10 0 13 2 0 0]
+    runningTotal	    3
+  }
+  testdata {
+    id			    3
+    modelcov		    1
+    uniqueId		    "99f2d659-6fdf-40bf-b29a-2327cb709a4f"
+    linkNode		    [2 0 0]
+    settings		    [0 0 0 1 0 0 0]
+    modelVersion	    "1.13"
+    creator		    "matlab01"
+    lastModifiedDate	    "Mon Nov 12 18:40:57 2018"
+    blockReductionStatus    "forced off"
+    conditionallyExecuteInputs 1
+    startTime		    737376.7784582638
+    stopTime		    737376.7784591666
+    data {
+      condition		      "100 M10x1[2 0 2 0 2 0 1 0 1 0]"
+      mcdc		      "100 M13x1[0 0 0 0 0 0 3 3 1 2 0 0 1]"
+    }
+    testobjectives	    [0 0 0 0 0 0 0 0 0 0 0 0 0 4]
+    mldref_enable	    "Off"
+    forceBlockReductionOff  1
+    covBoundaryRelTol	    0.01
+    covBoundaryAbsTol	    1e-05
+  }
+  metricdata {
+    id			    4
+    metricenumValue	    14
+    metricName		    "cvmetric_Structural_block"
+    size		    7
+    data {
+      rawdata		      "100 M7x1[1 0 1 0 1 0 1]"
+    }
+  }
+  typename {
+    id			    5
+    type		    "Logic"
+  }
+  slsfobj {
+    id			    6
+    name		    "EX031B"
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [0 7 0 0]
+    metricFlags		    16410
+    metrics		    [9 10 11 12]
+    cvChecksum {
+      u1		      2574607361
+      u2		      2738436232
+      u3		      960625487
+      u4		      1736078747
+    }
+  }
+  slsfobj {
+    id			    7
+    name		    "Signal Builder"
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [6 0 0 8]
+    cvChecksum {
+      u1		      3460440361
+      u2		      3887730159
+      u3		      895336520
+      u4		      681996150
+    }
+  }
+  slsfobj {
+    id			    8
+    name		    "Logical\nOperator"
+    origin		    SIMULINK_OBJ
+    slBlckType		    5
+    modelcov		    1
+    treeNode		    [6 0 7 0]
+    metricFlags		    16410
+    metrics		    [13 14 15 16]
+    cvChecksum {
+      u1		      3052117532
+      u2		      3610237464
+      u3		      735858614
+      u4		      1322530747
+    }
+  }
+  metric {
+    id			    9
+    dataIdx		    [0 -1]
+    justifiedDataIdx	    [1 -1]
+    dataCnt		    [4 0 -1 -1]
+    dataWidth		    11
+  }
+  metric {
+    id			    10
+    dataIdx		    [0 -1]
+    justifiedDataIdx	    [1 -1]
+    dataCnt		    [2 0 -1 -1]
+    dataWidth		    14
+  }
+  metric {
+    id			    11
+  }
+  metric {
+    id			    12
+    dataIdx		    [0 -1]
+    justifiedDataIdx	    [1 -1]
+    dataCnt		    [1 0 -1 -1]
+    dataWidth		    8
+  }
+  metric {
+    id			    13
+    baseObjs		    [17 18]
+    dataIdx		    [4 2]
+    justifiedDataIdx	    [5 3]
+    dataCnt		    [4 4 -1 -1]
+    dataWidth		    9
+  }
+  metric {
+    id			    14
+    baseObjs		    [21]
+    dataIdx		    [4 2]
+    justifiedDataIdx	    [5 3]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    12
+  }
+  sigranger {
+    id			    15
+    slsfobj		    8
+    cov			    [0 1 1]
+  }
+  metric {
+    id			    16
+    baseObjs		    [23]
+    dataIdx		    [4 2]
+    justifiedDataIdx	    [5 3]
+    dataCnt		    [1 1 -1 -1]
+    dataWidth		    6
+  }
+  condition {
+    id			    17
+    modelcov		    1
+    slsfobj		    8
+    descriptor		    19
+    coverage		    [7 6 0]
+  }
+  condition {
+    id			    18
+    modelcov		    1
+    slsfobj		    8
+    descriptor		    20
+    coverage		    [9 8 0]
+  }
+  message {
+    id			    19
+    keyNum		    54
+    intParams		    [1]
+  }
+  message {
+    id			    20
+    keyNum		    54
+    intParams		    [2]
+  }
+  mcdcentry {
+    id			    21
+    modelcov		    1
+    slsfobj		    8
+    numPredicates	    2
+    pathCount		    3
+    pathStorageCount	    1
+    exprType		    EXPR_PURE_OR
+    shortCircuiting	    SHRTCIRCUIT_OFF
+    descriptor		    22
+    conditions		    [17 18]
+    dataBaseIdx		    [6 8 10 12 9999 0]
+  }
+  message {
+    id			    22
+    keyNum		    56
+  }
+  decision {
+    id			    23
+    modelcov		    1
+    slsfobj		    8
+    descriptor		    24
+    dc			    [1 0 6 0]
+  }
+  message {
+    id			    24
+    keyNum		    24
+    txtParams		    "executed"
+  }
+}
